@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: bisque;
+}
+
+main {
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+
+h1 {
+    margin-top: 100px;
+    text-align: center;
+    border: 2px dashed red;
+    border-radius: 30px;
+    padding: 5px 40px;
+}
+
+table {
+    width: 770px;
+    margin: auto;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+table, tr, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.last-row {
+    border-right: 1px solid #666666;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #666666;
+    color: white;
+    border-bottom: 2px solid white;
+} 
+
+tr:nth-child(even){
+    background-color: #DDDDDD;
+} 
+
+tr:nth-child(odd) {
+    background-color: #F9F7F7;
+} 
+
+tr:last-child {
+    background-color: #666666;
+    color: white;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+    width: 120px;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    text-align: left;
+    width: 240px;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    text-align: center;
+    width: 80px;
+}
+
+th:nth-child(4), td:nth-child(4) {
+    text-align: right;
+    width: 120px;
+}
+
+th:nth-child(5), td:nth-child(5) {
+    text-align: right;
+    width: 120px;
+}
+
+.last-row, .last-row-2 {
+    border-bottom: 1px solid white;
+}
+
+td:last-child {
+    text-align: center;
+    width: 90px;
+}
+
+.fa-pen-to-square {
+    margin-right: 20px;
+}
+
+.buttons {
+    width: 770px;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+}
+
+button {
+    margin: 20px 0 0 20px;
+    padding: 10px;
+    background-color: #FF7F50;
+    color: white;
+    border-style: none;
+    font-size: 18px;
+}
+
+#btn-1::before {
+    content: '🛒';
+    color: black;
+    padding-right: 10px;
+}
+
+#btn-2::before {
+    content: '💳';
+    color: black;
+    padding-right: 10px;
+}
+
+@media (max-width: 800px) {
+    table, tr, th, td {
+        width: 10%;
+        font: 12px;
+        margin: auto;
+    }
+
+    .fa-solid {
+        margin: 2px 8px;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+        height: 55px;
+        
+    }
+
+    #btn-1, #btn-2 {
+        font-size: 12px;
+    }
+}
